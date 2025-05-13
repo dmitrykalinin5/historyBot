@@ -65,5 +65,6 @@ def handle_callback(call):
         pass
     send_scene(call.message.chat.id, next_scene)
 
+
 bot.remove_webhook()
 bot.polling()
