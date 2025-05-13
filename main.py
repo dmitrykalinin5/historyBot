@@ -11,6 +11,8 @@ SCENE_DIR = "story"
 
 user_states = {}
 
+def changeKarma()
+
 # Загрузка одной сцены из файла
 def load_scene(scene_key):
     path = os.path.join(SCENE_DIR, f"{scene_key}.json")
