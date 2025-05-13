@@ -1,0 +1,56 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># This is a sample Python script.\r\n\r\n# Press Shift+F10 to execute it or replace it with your code.\r\n# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.\r\n\r\n\r\ndef print_hi(name):\r\n    # Use a breakpoint in the code line below to debug your script.\r\n    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.\r\n\r\n\r\n# Press the green button in the gutter to run the script.\r\nif __name__ == '__main__':\r\n    print_hi('PyCharm')\r\n\r\n# See PyCharm help at https://www.jetbrains.com/help/pycharm/\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision 2ef02bb8b312b0bc4570cc3d9ecde4f70b29b89a)
++++ b/main.py	(date 1747129705743)
+@@ -14,3 +14,4 @@
+     print_hi('PyCharm')
+ 
+ # See PyCharm help at https://www.jetbrains.com/help/pycharm/
++
+Index: .idea/PythonProject.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/PythonProject.iml b/.idea/PythonProject.iml
+--- a/.idea/PythonProject.iml	(revision 2ef02bb8b312b0bc4570cc3d9ecde4f70b29b89a)
++++ b/.idea/PythonProject.iml	(date 1747129705778)
+@@ -1,8 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/.venv" />
++    </content>
++    <orderEntry type="jdk" jdkName="Python 3.13 (historyBot)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Black\">\r\n    <option name=\"sdkName\" value=\"Python 3.13 (PythonProject)\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 2ef02bb8b312b0bc4570cc3d9ecde4f70b29b89a)
++++ b/.idea/misc.xml	(date 1747129705782)
+@@ -3,4 +3,5 @@
+   <component name="Black">
+     <option name="sdkName" value="Python 3.13 (PythonProject)" />
+   </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (historyBot)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
