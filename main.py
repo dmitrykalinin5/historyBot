@@ -41,7 +41,7 @@ def send_scene(chat_id, scene_key):
 def start(message):
     markup = InlineKeyboardMarkup()
     markup.add(InlineKeyboardButton("Информацияℹ️", callback_data="information"))
-    markup.add(InlineKeyboardButton("Начать игру🎮", callback_data="information"))
+    markup.add(InlineKeyboardButton("Начать игру🎮", callback_data="startGame"))
     # markup.add(InlineKeyboardButton("Информацияℹ️", callback_data="information"))
     with open("startphoto.jpg", "rb") as photo:
         bot.send_photo(
