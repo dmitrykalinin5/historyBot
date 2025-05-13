@@ -34,7 +34,7 @@ def send_scene(chat_id, scene_key):
     markup = InlineKeyboardMarkup()
 
     for choice in scene.get("choices", []):
-        btn = InlineKeyboardButton(choice["text"], callback_data=choice["next"])
+        btn = InlineKeyboardButton(choice["text"], callback_data=choice["text"])
         markup.add(btn)
 
     bot.send_message(chat_id, f"{text}\n\n🧭 Карма: {karma}", reply_markup=markup)
@@ -58,26 +58,47 @@ def start(message):
 @bot.callback_query_handler(func=lambda call: True)
 def handle_callback(call):
     chat_id = call.message.chat.id
-    next_scene = call.data
+    data = call.data
     bot.answer_callback_query(call.id)
 
+    if data == "information":
+        bot.send_message(chat_id, "ℹ️ Это сюжетная игра с выбором. Выбирайте варианты и влияйте на карму.")
+        return
+
+    if data == "startGame":
+        user_states[chat_id] = "startGame"  # первая сцена
+        user_karma[chat_id] = 50  # сброс кармы
+        send_scene(chat_id, "startGame")
+        return
+
     current_scene_key = user_states.get(chat_id)
-    if current_scene_key:
-        current_scene = load_scene(current_scene_key)
-        if current_scene and "choices" in current_scene:
-            for choice in current_scene["choices"]:
-                if choice["next"] == next_scene:
-                    karma_change = choice.get("karma")
-                    if karma_change is not None:
-                        changeKarma(chat_id, karma_change)
-                    break
+    if not current_scene_key:
+        bot.send_message(chat_id, "Пожалуйста, начните игру сначала командой /start.")
+        return
 
-    try:
-        bot.delete_message(chat_id, call.message.message_id)
-    except:
-        pass
+    current_scene = load_scene(current_scene_key)
+    if not current_scene:
+        bot.send_message(chat_id, "Ошибка загрузки текущей сцены.")
+        return
 
-    send_scene(chat_id, next_scene)
+    next_scene = None
+    for choice in current_scene.get("choices", []):
+        if choice["text"] == data:
+            next_scene = choice["next"]
+            karma_change = choice.get("karma")
+            if karma_change is not None:
+                changeKarma(chat_id, karma_change)
+            break
+
+    if next_scene:
+        try:
+            bot.delete_message(chat_id, call.message.message_id)
+        except:
+            pass
+        send_scene(chat_id, next_scene)
+    else:
+        bot.send_message(chat_id, "Недопустимый выбор.")
+
 
 bot.remove_webhook()
 bot.polling()
