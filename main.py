@@ -1,5 +1,5 @@
 import telebot
-from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import json
 import os
 
@@ -10,14 +10,11 @@ bot = telebot.TeleBot(token)
 SCENE_DIR = "story"
 
 user_states = {}
+user_karma = {}  # <--- теперь карма хранится по chat_id
 
-karma = 50
+def changeKarma(chat_id, delta):
+    user_karma[chat_id] = user_karma.get(chat_id, 50) + int(delta)
 
-def changeKarma(delta):
-    global karma
-    karma += delta
-
-# Загрузка одной сцены из файла
 def load_scene(scene_key):
     path = os.path.join(SCENE_DIR, f"{scene_key}.json")
     if not os.path.exists(path):
@@ -25,7 +22,6 @@ def load_scene(scene_key):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-# Отправка сцены пользователю
 def send_scene(chat_id, scene_key):
     scene = load_scene(scene_key)
     if not scene:
@@ -33,6 +29,7 @@ def send_scene(chat_id, scene_key):
         return
 
     user_states[chat_id] = scene_key
+    karma = user_karma.get(chat_id, 50)
     text = scene["text"]
     markup = InlineKeyboardMarkup()
 
@@ -40,35 +37,47 @@ def send_scene(chat_id, scene_key):
         btn = InlineKeyboardButton(choice["text"], callback_data=choice["next"])
         markup.add(btn)
 
-    bot.send_message(chat_id, text + "\n" + str(karma), reply_markup=markup)
+    bot.send_message(chat_id, f"{text}\n\n🧭 Карма: {karma}", reply_markup=markup)
 
-# Команда /start
 @bot.message_handler(commands=["start"])
 def start(message):
+    chat_id = message.chat.id
+    user_karma[chat_id] = 50  # начальное значение
     markup = InlineKeyboardMarkup()
     markup.add(InlineKeyboardButton("Информацияℹ️", callback_data="information"))
     markup.add(InlineKeyboardButton("Начать игру🎮", callback_data="startGame"))
-    # markup.add(InlineKeyboardButton("Информацияℹ️", callback_data="information"))
+
     with open("startphoto.jpg", "rb") as photo:
         bot.send_photo(
-            message.chat.id,
+            chat_id,
             photo,
             caption="Приветствуем тебя в нашем боте, выбери, что хочешь сделать👇:",
             reply_markup=markup
         )
 
-
-# Обработка выбора
 @bot.callback_query_handler(func=lambda call: True)
 def handle_callback(call):
+    chat_id = call.message.chat.id
     next_scene = call.data
     bot.answer_callback_query(call.id)
+
+    current_scene_key = user_states.get(chat_id)
+    if current_scene_key:
+        current_scene = load_scene(current_scene_key)
+        if current_scene and "choices" in current_scene:
+            for choice in current_scene["choices"]:
+                if choice["next"] == next_scene:
+                    karma_change = choice.get("karma")
+                    if karma_change is not None:
+                        changeKarma(chat_id, karma_change)
+                    break
+
     try:
-        bot.delete_message(call.message.chat.id, call.message.message_id)
+        bot.delete_message(chat_id, call.message.message_id)
     except:
         pass
-    send_scene(call.message.chat.id, next_scene)
 
+    send_scene(chat_id, next_scene)
 
 bot.remove_webhook()
 bot.polling()

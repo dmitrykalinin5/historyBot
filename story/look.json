@@ -1,8 +1,8 @@
 {
   "text": "Сегодня 22 июня 1941 года.\nГермания начала вторжение в СССР. Объявлена война. Какие эмоции ты испытываешь?",
   "choices": [
-    { "text": "Страх", "next": "fear", "karma": "+5" },
-    { "text": "Гнев", "next": "anger", "karma": "-5" },
-    { "text": "Апатия", "next": "apathy", "karma": "-2" }
+    { "text": "Страх", "next": "first_choice", "karma": "+5" },
+    { "text": "Гнев", "next": "first_choice", "karma": "-5" },
+    { "text": "Апатия", "next": "first_choice", "karma": "-2" }
   ]
 }
