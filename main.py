@@ -47,7 +47,8 @@ def start(message):
         bot.send_photo(
             message.chat.id,
             photo,
-            caption="Привет! "
+            caption="Приветствуем тебя в нашем боте, выбери, что хочешь сделать👇:",
+            reply_markup=markup
         )
 
 
