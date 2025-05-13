@@ -39,9 +39,16 @@ def send_scene(chat_id, scene_key):
 # Команда /start
 @bot.message_handler(commands=["start"])
 def start(message):
-    with open("startphoto.jpg", "rb") as f1:
-        photo = InputMediaPhoto(f1, caption="aaaa") # Добавляем фотку
-        bot.send_media_group(message.chat.id, [photo])
+    markup = InlineKeyboardMarkup()
+    markup.add(InlineKeyboardButton("Информацияℹ️", callback_data="information"))
+    markup.add(InlineKeyboardButton("Начать игру🎮", callback_data="information"))
+    # markup.add(InlineKeyboardButton("Информацияℹ️", callback_data="information"))
+    with open("startphoto.jpg", "rb") as photo:
+        bot.send_photo(
+            message.chat.id,
+            photo,
+            caption="Привет! "
+        )
 
 
 # Обработка выбора
