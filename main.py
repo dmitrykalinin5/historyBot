@@ -1,9 +1,9 @@
 import telebot
-from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto
 import json
 import os
 
-token = "ВАШ_ТОКЕН_ТУТ"
+token = "8178537704:AAEQrPjGPzx6dVjgchrSYlf4ksRDvg5iW0o"
 bot = telebot.TeleBot(token)
 
 # Папка с отдельными сценами
@@ -39,7 +39,10 @@ def send_scene(chat_id, scene_key):
 # Команда /start
 @bot.message_handler(commands=["start"])
 def start(message):
-    send_scene(message.chat.id, "start")
+    with open("startphoto.jpg", "rb") as f1:
+        photo = InputMediaPhoto(f1, caption="aaaa") # Добавляем фотку
+        bot.send_media_group(message.chat.id, [photo])
+
 
 # Обработка выбора
 @bot.callback_query_handler(func=lambda call: True)
@@ -52,4 +55,5 @@ def handle_callback(call):
         pass
     send_scene(call.message.chat.id, next_scene)
 
+bot.remove_webhook()
 bot.polling()
