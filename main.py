@@ -31,7 +31,6 @@ def send_scene(chat_id, scene_key):
     if not scene:
         bot.send_message(chat_id, f"Ошибка: сцена '{scene_key}' не найдена.")
         return
-    changeKarma(int(scene["karma"]))
 
     user_states[chat_id] = scene_key
     text = scene["text"]
