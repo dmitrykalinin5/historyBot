@@ -11,7 +11,11 @@ SCENE_DIR = "story"
 
 user_states = {}
 
-def changeKarma()
+karma = 50
+
+def changeKarma(delta):
+    global karma
+    karma += delta
 
 # Загрузка одной сцены из файла
 def load_scene(scene_key):
@@ -27,6 +31,7 @@ def send_scene(chat_id, scene_key):
     if not scene:
         bot.send_message(chat_id, f"Ошибка: сцена '{scene_key}' не найдена.")
         return
+    changeKarma(int(scene["karma"]))
 
     user_states[chat_id] = scene_key
     text = scene["text"]
@@ -36,7 +41,7 @@ def send_scene(chat_id, scene_key):
         btn = InlineKeyboardButton(choice["text"], callback_data=choice["next"])
         markup.add(btn)
 
-    bot.send_message(chat_id, text, reply_markup=markup)
+    bot.send_message(chat_id, text + "\n" + str(karma), reply_markup=markup)
 
 # Команда /start
 @bot.message_handler(commands=["start"])

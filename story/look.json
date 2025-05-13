@@ -4,5 +4,6 @@
     { "text": "Страх", "next": "fear" },
     { "text": "Гнев", "next": "anger" },
     { "text": "Апатия", "next": "apathy" }
-  ]
+  ],
+  "karma": 0
 }
