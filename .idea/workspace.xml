@@ -4,29 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb" name="Changes" comment="kalinin">
-      <change afterPath="$PROJECT_DIR$/story/10_run_later.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/10_run_now.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/3_kiev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/4_choices.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/5_you_live.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/5_you_stay_with_friend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/6_surrounded.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/7_captivity.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/7_kill_yourself.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/8_died_in_captivity.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/8_try_to_go_out.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/9_think_when_go_out.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb" name="Changes" comment="kuzmin">
+      <change afterPath="$PROJECT_DIR$/story/final.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/2_home_choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/2_home_choice.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/2_military_office.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/2_military_office.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/3_military_office.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/3_military_office.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/first_choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/first_choice.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/10_run_later.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/10_run_later.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/10_run_now.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/10_run_now.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/4_choices.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/4_choices.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/6_surrounded.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/6_surrounded.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/7_captivity.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/7_captivity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/7_kill_yourself.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/7_kill_yourself.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/8_died_in_captivity.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/8_died_in_captivity.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/first_ending.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/first_ending.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/look.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/look.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,17 +53,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dima__done__lab8__proga",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dima__done__lab8__proga&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kotuk\PycharmProjects\historyBot" />
@@ -83,10 +73,11 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-2ee2454479a3-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.122" />
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb" name="Changes" comment="" />
@@ -95,13 +86,13 @@
       <option name="presentableId" value="Default" />
       <updated>1747129079920</updated>
     </task>
-    <task id="LOCAL-00001" summary="sad">
+    <task id="LOCAL-00001" summary="kuzmin">
       <option name="closed" value="true" />
-      <created>1747129647274</created>
+      <created>1747150463063</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1747129647274</updated>
+      <updated>1747150463063</updated>
     </task>
     <task id="LOCAL-00002" summary="kalinin">
       <option name="closed" value="true" />
@@ -159,11 +150,13 @@
       <option name="project" value="LOCAL" />
       <updated>1747132102317</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sad" />
     <MESSAGE value="kalinin" />
-    <option name="LAST_COMMIT_MESSAGE" value="kalinin" />
+    <MESSAGE value="kuzmin" />
+    <option name="LAST_COMMIT_MESSAGE" value="kuzmin" />
   </component>
 </project>

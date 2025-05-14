@@ -27,7 +27,6 @@ def send_scene(chat_id, scene_key):
     if not scene:
         bot.send_message(chat_id, f"Ошибка: сцена '{scene_key}' не найдена.")
         return
-
     user_states[chat_id] = scene_key
     karma = user_karma.get(chat_id, 50)
     text = scene["text"]
@@ -59,7 +58,11 @@ def start(message):
 def handle_callback(call):
     chat_id = call.message.chat.id
     data = call.data
-    bot.answer_callback_query(call.id)
+    try:
+        bot.answer_callback_query(call.id)
+    except Exception as e:
+        print(f"Ошибка при answer_callback_query: {e}")
+
 
     if data == "information":
         bot.send_message(chat_id, "ℹ️ Это сюжетная игра с выбором. Выбирайте варианты и влияйте на карму.")
@@ -69,6 +72,28 @@ def handle_callback(call):
         user_states[chat_id] = "startGame"  # первая сцена
         user_karma[chat_id] = 50  # сброс кармы
         send_scene(chat_id, "startGame")
+        return
+
+    if data == "Завершить":
+        karma = user_karma.get(chat_id, 50)
+        if karma <= 25:
+            status = "💀 Ты предал Родину."
+        elif 50 <= karma <= 75:
+            status = "🪖 Ты достойный солдат."
+        elif karma > 75:
+            status = "🏅 Ты герой своей страны!"
+        else:
+            status = ""
+
+        result_message = f" Игра завершена.\n Твоя карма: {karma}"
+        if status:
+            result_message += f"\n\n{status}"
+
+        # 👇 Кнопка "Начать заново"
+        markup = InlineKeyboardMarkup()
+        markup.add(InlineKeyboardButton("🔁 Начать заново", callback_data="startGame"))
+
+        bot.send_message(chat_id, result_message, reply_markup=markup)
         return
 
     current_scene_key = user_states.get(chat_id)
