@@ -5,17 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb" name="Changes" comment="kuzmin">
-      <change afterPath="$PROJECT_DIR$/story/final.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/captivity.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/choices.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/died_in_captivity.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/first_choice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/home_choice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/kiev.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/kill_yourself.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/look.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/military.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/military_office.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/predatelstvo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/run_later.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/run_now.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/surrounded.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/think_when.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/try_to_go_out.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/you_live.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/you_stay_with_friend.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/10_run_later.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/10_run_later.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/10_run_now.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/10_run_now.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/2_home_choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/2_home_choice.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/2_military_office.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/2_military_office.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/2_predatelstvo_rodini.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/2_predatelstvo_rodini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/3_kiev.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/3_kiev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/3_military_office.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/3_military_office.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/4_choices.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/4_choices.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/5_you_live.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/5_you_live.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/5_you_stay_with_friend.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/5_you_stay_with_friend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/6_surrounded.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/6_surrounded.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/7_captivity.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/7_captivity.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/7_kill_yourself.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/7_kill_yourself.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/8_died_in_captivity.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/8_died_in_captivity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/8_try_to_go_out.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/8_try_to_go_out.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/9_think_when_go_out.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/9_think_when_go_out.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/final.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/first_choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/first_choice.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/first_ending.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/first_ending.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/look.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/look.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +96,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dmitry\PycharmProjects\historyBot\img" />
       <recent name="C:\Users\kotuk\PycharmProjects\historyBot" />
     </key>
   </component>
@@ -94,13 +124,13 @@
       <option name="project" value="LOCAL" />
       <updated>1747150463063</updated>
     </task>
-    <task id="LOCAL-00002" summary="kalinin">
+    <task id="LOCAL-00002" summary="kuzmin">
       <option name="closed" value="true" />
-      <created>1747130091121</created>
+      <created>1747258591945</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1747130091121</updated>
+      <updated>1747258591945</updated>
     </task>
     <task id="LOCAL-00003" summary="kalinin">
       <option name="closed" value="true" />
@@ -150,7 +180,7 @@
       <option name="project" value="LOCAL" />
       <updated>1747132102317</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
