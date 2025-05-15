@@ -79,7 +79,7 @@ def start(message):
     markup = InlineKeyboardMarkup()
     markup.add(InlineKeyboardButton("Информацияℹ️", callback_data="information"))
     markup.add(InlineKeyboardButton("Начать игру🎮", callback_data="startGame"))
-    markup.add(InlineKeyboardButton("💡 Предложить идею", callback_data="suggestIdea"))  # Новая кнопка
+    markup.add(InlineKeyboardButton("Предложить идею💡", callback_data="suggestIdea"))  # Новая кнопка
 
     with open("startphoto.jpg", "rb") as photo:
         try:
