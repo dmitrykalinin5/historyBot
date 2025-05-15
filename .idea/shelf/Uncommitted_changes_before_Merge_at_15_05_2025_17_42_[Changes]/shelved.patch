@@ -1,0 +1,105 @@
+Index: .idea/PythonProject.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.venv\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/PythonProject.iml b/.idea/PythonProject.iml
+--- a/.idea/PythonProject.iml	(revision 665ee6001fa7e59dffdeb7d40d582e1be40a85fb)
++++ b/.idea/PythonProject.iml	(date 1747150656953)
+@@ -4,7 +4,7 @@
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+     </content>
+-    <orderEntry type="inheritedJdk" />
++    <orderEntry type="jdk" jdkName="Python 3.13 virtualenv at C:\Users\kotuk\PycharmProjects\historyBot\.venv" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb\" name=\"Changes\" comment=\"kalinin\">\r\n      <change afterPath=\"$PROJECT_DIR$/story/10_run_later.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/10_run_now.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/3_kiev.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/4_choices.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/5_you_live.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/5_you_stay_with_friend.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/6_surrounded.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/7_captivity.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/7_kill_yourself.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/8_died_in_captivity.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/8_try_to_go_out.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/story/9_think_when_go_out.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/PythonProject.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/PythonProject.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/story/2_home_choice.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/story/2_home_choice.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/story/2_military_office.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/story/2_military_office.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/story/3_military_office.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/story/3_military_office.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/story/first_choice.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/story/first_choice.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/story/first_ending.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/story/first_ending.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/story/look.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/story/look.json\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;dmitrykalinin5&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/dmitrykalinin5/historyBot.git&quot;,\r\n    &quot;accountId&quot;: &quot;dc8f75d4-de7b-4d17-9910-1da220c82cef&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2x2H7EZdcbexGOCO1ZlnXyM8NiP\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"dima__done__lab8__proga\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"settings.editor.selected.configurable\": \"preferences.editor\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\kotuk\\PycharmProjects\\historyBot\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-2ee2454479a3-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.122\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb\" name=\"Changes\" comment=\"\" />\r\n      <created>1747129079920</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1747129079920</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"sad\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747129647274</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747129647274</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"kalinin\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747130091121</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747130091121</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"kalinin\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747130338690</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747130338690</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"kalinin\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747130505003</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747130505003</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"kalinin\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747130880021</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747130880021</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"kalinin\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747131590295</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747131590295</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"kalinin\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747131952270</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747131952270</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"kalinin\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747132102317</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747132102317</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"sad\" />\r\n    <MESSAGE value=\"kalinin\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"kalinin\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 665ee6001fa7e59dffdeb7d40d582e1be40a85fb)
++++ b/.idea/workspace.xml	(date 1747150964794)
+@@ -5,28 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb" name="Changes" comment="kalinin">
+-      <change afterPath="$PROJECT_DIR$/story/10_run_later.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/10_run_now.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/3_kiev.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/4_choices.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/5_you_live.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/5_you_stay_with_friend.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/6_surrounded.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/7_captivity.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/7_kill_yourself.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/8_died_in_captivity.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/8_try_to_go_out.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/story/9_think_when_go_out.json" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/story/2_home_choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/2_home_choice.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/story/2_military_office.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/2_military_office.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/story/3_military_office.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/3_military_office.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/story/first_choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/first_choice.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/story/first_ending.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/first_ending.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/story/look.json" beforeDir="false" afterPath="$PROJECT_DIR$/story/look.json" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -64,17 +45,17 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "Python.main.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "dima__done__lab8__proga",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "settings.editor.selected.configurable": "preferences.editor"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;Python.main.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;dimaKrutoi&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\kotuk\PycharmProjects\historyBot" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Black\">\r\n    <option name=\"sdkName\" value=\"Python 3.13 (PythonProject)\" />\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.13 (historyBot)\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 665ee6001fa7e59dffdeb7d40d582e1be40a85fb)
++++ b/.idea/misc.xml	(date 1747150656957)
+@@ -3,5 +3,5 @@
+   <component name="Black">
+     <option name="sdkName" value="Python 3.13 (PythonProject)" />
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (historyBot)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 virtualenv at C:\Users\kotuk\PycharmProjects\historyBot\.venv" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb" name="Changes" comment="kuzmin">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb" name="Changes" comment="kalinin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,32 +41,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dima__done__lab8__proga&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dimaKrutoi",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dmitry\PycharmProjects\historyBot\img" />
       <recent name="C:\Users\kotuk\PycharmProjects\historyBot" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-2ee2454479a3-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.122" />
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="08cf74f4-8d1b-4b6f-932a-6ef16bf32cbb" name="Changes" comment="" />
@@ -78,29 +72,29 @@
       <option name="presentableId" value="Default" />
       <updated>1747129079920</updated>
     </task>
-    <task id="LOCAL-00001" summary="kuzmin">
+    <task id="LOCAL-00001" summary="kalinin">
       <option name="closed" value="true" />
-      <created>1747150463063</created>
+      <created>1747320686722</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1747150463063</updated>
+      <updated>1747320686722</updated>
     </task>
-    <task id="LOCAL-00002" summary="kuzmin">
+    <task id="LOCAL-00002" summary="kalinin">
       <option name="closed" value="true" />
-      <created>1747258591945</created>
+      <created>1747130091121</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1747258591945</updated>
+      <updated>1747130091121</updated>
     </task>
-    <task id="LOCAL-00003" summary="kuzmin">
+    <task id="LOCAL-00003" summary="kalinin">
       <option name="closed" value="true" />
-      <created>1747263583275</created>
+      <created>1747130338690</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1747263583275</updated>
+      <updated>1747130338690</updated>
     </task>
     <task id="LOCAL-00004" summary="kalinin">
       <option name="closed" value="true" />
@@ -142,13 +136,12 @@
       <option name="project" value="LOCAL" />
       <updated>1747132102317</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sad" />
     <MESSAGE value="kalinin" />
-    <MESSAGE value="kuzmin" />
-    <option name="LAST_COMMIT_MESSAGE" value="kuzmin" />
+    <option name="LAST_COMMIT_MESSAGE" value="kalinin" />
   </component>
 </project>
