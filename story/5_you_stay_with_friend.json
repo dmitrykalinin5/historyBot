@@ -1,5 +1,6 @@
 {
   "text": "Ты решил остаться с раненым товарищем.\nЧто ж, похвально!\nОднако жизнь штука интересная!",
+  "image_path": "img/you_stay_with_friend.jpg",
   "choices": [
     { "text": "Далее", "next": "7_captivity", "karma": "0" }
   ]

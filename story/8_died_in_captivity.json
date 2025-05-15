@@ -1,6 +1,7 @@
 {
   "text": "К сожалению, тяжесть бытия в лагере подкосила твое здоровье.\nТы заболел и был расстрелян. КОНЕЦ",
+  "image_path": "img/died_in_captivity.jpg",
   "choices": [
-    { "text": "Далее", "next": "final", "karma": "0" }
+    { "text": "Завершить", "next": "end_game", "karma": "0" }
   ]
 }

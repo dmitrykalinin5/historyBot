@@ -1,7 +1,8 @@
 {
   "text": "Прошло еще несколько недель активных боев.\nОднако вас взяли в окружение.\nЧто ты будешь делать?\n",
+  "image_path": "img/surrounded.jpg",
   "choices": [
-    { "text": "Попытаюсь нанести врагу максимальный урон", "next": "7_kill_yourself", "karma": "30" },
+    { "text": "Пожертвую собой", "next": "7_kill_yourself", "karma": "30" },
     { "text": "Сдамся в плен", "next": "7_captivity", "karma": "-8" }
   ]
 }
