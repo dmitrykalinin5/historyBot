@@ -128,7 +128,7 @@ def handle_callback(call):
         markup.add(InlineKeyboardButton("❌ Отменить ввод", callback_data="cancel_idea"))
         bot.send_message(
             chat_id,
-            "✍️ Напиши свою идею, и мы обязательно её рассмотрим!\nНе беспокойтесь, всё анонимно.",
+            "✍️ Напиши свою идею, и мы обязательно её рассмотрим!",
             reply_markup=markup
         )
         return
