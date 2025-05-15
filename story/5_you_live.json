@@ -1,6 +1,6 @@
 {
   "text": "Ты выжил! Только какой ценой?\nВопрос открытый.",
-  "image_path": "img/you_live.jpg",
+  "image_path": "img/you_live.jpeg",
   "choices": [
     { "text": "Далее", "next": "6_surrounded", "karma": "0" }
   ]
