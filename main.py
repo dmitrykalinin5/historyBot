@@ -2,6 +2,7 @@ import time
 
 import requests
 import telebot
+from datetime import datetime
 from requests import ReadTimeout
 from telebot.apihelper import ApiTelegramException
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -54,16 +55,16 @@ def send_scene(chat_id, scene_key):
                 bot.send_photo(
                     chat_id,
                     photo,
-                    caption=f"{text}\n\n🧭 Карма: {karma}",
+                    caption=f"{text}",
                     reply_markup=markup
                 )
         except Exception as e:
             print(f"Ошибка при отправке фото: {e}")
-            bot.send_message(chat_id, f"{text}\n\n🧭 Карма: {karma}", reply_markup=markup)
+            bot.send_message(chat_id, f"{text}", reply_markup=markup)
     else:
         print(f"Фото не найдено по пути: {image_path}")
         try:
-            bot.send_message(chat_id, f"{text}\n\n🧭 Карма: {karma}", reply_markup=markup)
+            bot.send_message(chat_id, f"{text}", reply_markup=markup)
         except Exception as e:
             print(f"Ошибка при отправке сцены: {e}")
 
@@ -78,6 +79,7 @@ def start(message):
     markup = InlineKeyboardMarkup()
     markup.add(InlineKeyboardButton("Информацияℹ️", callback_data="information"))
     markup.add(InlineKeyboardButton("Начать игру🎮", callback_data="startGame"))
+    markup.add(InlineKeyboardButton("💡 Предложить идею", callback_data="suggestIdea"))  # Новая кнопка
 
     with open("startphoto.jpg", "rb") as photo:
         try:
@@ -90,8 +92,10 @@ def start(message):
         except Exception as e:
             print(f"Ошибка при отправке фото: {e}")
 
+
 @bot.callback_query_handler(func=lambda call: True)
 def handle_callback(call):
+
     chat_id = call.message.chat.id
     data = call.data
 
@@ -100,6 +104,15 @@ def handle_callback(call):
     except Exception as e:
         print(f"Ошибка при answer_callback_query: {e}")
 
+    if data == "cancel_idea":
+        if user_states.get(chat_id) == "suggesting":
+            user_states.pop(chat_id, None)
+            bot.send_message(chat_id, "❌ Ввод идеи отменён.")
+        else:
+            bot.send_message(chat_id, "⚠️ Вы не вводите идею в данный момент.")
+        return
+
+
     if data == "information":
         bot.send_message(chat_id, "ℹ️ Это сюжетная игра с выбором. Выбирайте варианты и влияйте на карму.")
         return
@@ -107,6 +120,17 @@ def handle_callback(call):
     if data == "startGame":
         user_karma[chat_id] = 50
         send_scene(chat_id, "startGame")
+        return
+
+    if data == "suggestIdea":
+        user_states[chat_id] = "suggesting"
+        markup = InlineKeyboardMarkup()
+        markup.add(InlineKeyboardButton("❌ Отменить ввод", callback_data="cancel_idea"))
+        bot.send_message(
+            chat_id,
+            "✍️ Напиши свою идею, и мы обязательно её рассмотрим!\nНе беспокойтесь, всё анонимно.",
+            reply_markup=markup
+        )
         return
 
     if data == "end_game":
@@ -159,6 +183,29 @@ def handle_callback(call):
         handle_callback(type("Call", (), {"message": call.message, "data": "end_game", "id": call.id})())
     else:
         send_scene(chat_id, next_scene)
+
+
+@bot.message_handler(func=lambda message: True)
+def handle_text(message):
+    chat_id = message.chat.id
+
+    if user_states.get(chat_id) == "suggesting":
+        idea_text = message.text.strip()
+        username = message.from_user.username or f"id_{chat_id}"
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        try:
+            with open("ideas.txt", "a", encoding="utf-8") as f:
+                f.write(f"[Пользователь: @{username}]\n")
+                f.write(f"[Время: {timestamp}]\n")
+                f.write(f"Идея: {idea_text}\n")
+                f.write("-" * 40 + "\n")
+            bot.send_message(chat_id, "✅ Спасибо! Твоя идея сохранена.")
+        except Exception as e:
+            print(f"Ошибка при записи идеи: {e}")
+            bot.send_message(chat_id, "❌ Ошибка при сохранении идеи. Попробуйте позже.")
+
+        user_states.pop(chat_id, None)
 
 
 bot.remove_webhook()
